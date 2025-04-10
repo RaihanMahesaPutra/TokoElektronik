@@ -56,8 +56,7 @@
           <!-- Search dan Login -->
           <div class="flex items-center space-x-3">
             <input type="text" placeholder="Cari..." class="border rounded-lg px-3 py-1 hidden md:block">
-            <a href="#" class="text-gray-600 hover:text-blue-500">Login</a>
-            <a href="#" class="text-gray-600 hover:text-blue-500">Sign Up</a>
+            @yield('content')
           </div>
         </div>
       </nav>

@@ -7,15 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="font-sans bg-white-100">
-  <div id="loader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
-    <div class="flex space-x-2">
-      <div class="w-5 h-5 bg-blue-500 rounded-full animate-bounce"></div>
-      <div class="w-5 h-5 bg-green-500 rounded-full animate-bounce [animation-delay:0.1s]"></div>
-      <div class="w-5 h-5 bg-red-500 rounded-full animate-bounce [animation-delay:0.2s]"></div>
-    </div>
-  </div>
-  <div id="main-content" class="hidden">
+<body class="font-sans bg-gray-100">
     <nav class="bg-white shadow py-4 fixed w-full z-50">
         <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
       
@@ -57,7 +49,6 @@
           <div class="flex items-center space-x-3">
             <input type="text" placeholder="Cari..." class="border rounded-lg px-3 py-1 hidden md:block">
             <a href="#" class="text-gray-600 hover:text-blue-500">Login</a>
-            <a href="#" class="text-gray-600 hover:text-blue-500">Sign Up</a>
           </div>
         </div>
       </nav>
@@ -76,8 +67,10 @@
     <section class="font-sans py-16">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-8">Produk Unggulan</h2>
+
             @include('partials.produk-kulkas')
-            @include('partials.produk-mesincuci')
+            @include('partials.produk-kulkas'
+            
         </div>
     </section>
     
@@ -161,11 +154,7 @@
         </div>
       </div>
     </footer>
-    
-    <script src="js/hide-loader.js"></script> 
-    <script src="js/navbar-kategori.js"></script> 
 
-    
-  </div>
+    <script src="js/navbar-kategori.js"></script> 
 </body>
 </html>
